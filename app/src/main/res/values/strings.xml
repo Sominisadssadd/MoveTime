@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MoveTime</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_screen_description">Испытайте максимальные эмоции от просмотра ваших любимых фильмов</string>
+    <string name="continue_button">Продолжить</string>
+    <string name="cinema_name">Cinema X</string>
+    <string name="error_incorrect_data_fields">Введите корректные данные</string>
+</resources>

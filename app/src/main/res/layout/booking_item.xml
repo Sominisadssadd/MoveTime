@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="40dp"
+    android:paddingEnd="40dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp">
+
+        <ImageView
+            android:id="@+id/imageViewMovie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/film_poster_2" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvMovieFilm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="20sp"
+            tools:text="Бесславные ублюдки" />
+
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="18sp"
+            tools:text="18+" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMovieType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Жанр: Боевик" />
+
+    <TextView
+        android:id="@+id/tvDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Длительность: 120 мин" />
+
+    <TextView
+        android:id="@+id/dateOfStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        tools:text="Дата показа: 03.04.2004" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:gravity="center"
+        android:backgroundTint="#F27575"
+        android:id="@+id/buttonRemoveBooking"
+        android:layout_width="match_parent"
+        android:text="Отменить бронь"
+        android:drawableTop="@drawable/baseline_delete_24"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</LinearLayout>
