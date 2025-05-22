@@ -60,6 +60,18 @@ class AdminScreen : AppCompatActivity() {
             placeCount
         )
         viewModel.addNewMovie(movie)
+        binding.apply {
+            editMovieName.text = null
+            editMovieAge.text = null
+            editMovieType.text= null
+            editMovieDuration.text= null
+            editMovieDateOfStart.text= null
+            editPlaceCount.text= null
+            edImageURL.text= null
+
+        }
+
+
     }
 
     private fun choicePhoto() {
